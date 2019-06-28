@@ -1,0 +1,30 @@
+아두이노 - 라즈베리파이 블루투스 통신
+https://webnautes.tistory.com/979
+
+아두이노 - 라즈베리파이 와이파이 통신
+https://webnautes.tistory.com/1110
+
+1. 현관 : (초인종) 스피커, 스위치
+https://m.blog.naver.com/PostView.nhn?blogId=darknisia&logNo=220783366591&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+                          & LED 초음파센서
+https://kocoafab.cc/tutorial/view/65
+2. 거실 : 온습도센서, LED
+https://kocoafab.cc/tutorial/view/379 
+                         & DC모터, 프로펠러 
+https://kocoafab.cc/tutorial/view/70                         
+                         & 불 꺼짐켜짐 3색 LED
+https://kocoafab.cc/tutorial/view/725 
+3. 침실 1 : 조도센서, LED              
+https://kocoafab.cc/tutorial/view/356
+                          & 서보모터 (창문 여닫이) 
+https://codingrun.com/110
+                          & 불 꺼짐켜짐 3색 LED 
+4. 드레스룸 : LCD, 스피커 (시계알람)
+https://kocoafab.cc/make/view/144
+                          & 불 꺼짐켜짐 3색 LED
+5. 주방 : 모션센서, LED
+https://kocoafab.cc/tutorial/view/63
+                          & 불 꺼짐켜짐 3색 LED
+
+qt RGD_arduino
+https://www.youtube.com/watch?v=iAbJy4weFK8

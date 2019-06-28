@@ -1,0 +1,53 @@
+#include <iostream>
+#include <wiringPi.h>
+
+using namespace std;
+
+class dist{
+private:
+	float result, s, e;
+public:
+	float measures(float i);
+	float measuree(float j);
+	float calc();
+};
+
+float dist::measures(float i){
+	s=i;
+}
+
+float dist::measuree(float j){
+	e=j;
+}
+
+float dist::calc(){
+	return result = 200-((e-s)/58);
+
+}
+
+int main(void){
+	dist d;
+
+	wiringPiSetup();
+
+	pinMode(0, OUTPUT);
+	pinMode(1, INPUT);
+
+	while (1) {
+		digitalWrite(0,0);
+		digitalWrite(0,1);
+		delayMicroseconds(1000);
+		digitalWrite(0,0);
+		while (digitalRead(1) == 0)
+			d.measures(micros());
+		while(digitalRead(1) == 1)
+			d.measuree(micros());
+		d.calc();
+		float r = d.calc();
+		if( r  >100)
+			cout<<"distance(cm): "<<r<<endl;
+		delay(100);
+		}
+	return 0;
+}
+

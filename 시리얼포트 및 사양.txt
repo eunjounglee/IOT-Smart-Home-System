@@ -1,0 +1,31 @@
+Forward Current If Max: 20mA
+Forward Voltage VF Max: 2.5V
+
+(RASPBERRY PI B+)
+
+245-6986
+BC2004DBNHEH
+
+<아두이노 wifi clinent>
+http://www.hardcopyworld.com/gnuboard5/bbs/board.php?bo_table=lecture_esp&wr_id=44
+
+
+
+Controller B8:27:EB:E1:34:5A
+
+첫번째 블루투스 98:D3:61:F9:2B:E8 HC-06
+비밀번호 1234
+
+두번째 블루투스 00:21:13:00:C1:19 00:21:13:00:C1:19
+비밀번호 0000
+
+세번째 블루투스  00:21:13:00:19:3B
+
+sudo nano /etc/bluetooth/rfcomm.conf
+
+rfcomm1 {
+    bind yes;
+    device 00:21:13:00:C1:19;
+    channel 1;
+    comment "Connection to Bluetooth serial module";
+}

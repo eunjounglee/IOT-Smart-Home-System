@@ -1,0 +1,26 @@
+#include <iostream>
+#include <wiringPi.h>
+
+using namespace std;
+
+int main(void){
+
+	wiringPiSetup();
+
+	pinMode(2,OUTPUT);
+	pinMode(3,INPUT);
+	while(1)
+	{
+		if (digitalRead(3) == 1)
+		{
+		digitalWrite(2,HIGH); //led high
+		delay(50); 
+		cout << "start" <<endl;
+		} else {
+		digitalWrite(2,LOW);  //led low
+		delay(50);  
+		cout << "end" << endl;
+		}		
+	}	
+	return 0;
+}
